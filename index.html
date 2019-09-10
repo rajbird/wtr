@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -21,7 +23,7 @@
     <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="css/resume.min.css" rel="stylesheet">
+    <link href="css/resume.css" rel="stylesheet">
 
   </head>
 
@@ -42,21 +44,39 @@
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#about">About</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#experience">Employer</a>
+          <li class="nav-item" >
+            <a class="nav-link js-scroll-trigger dropdown-toggle dropdown-label1" data-toggle="dropdown" href="#wt1employer" onclick="accWT1()">Work Term 1/2</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#education">Job Description</a>
+            <div class="dropdown-container" id="WrkTerm1" >
+              <li>
+                <a class="nav-link js-scroll-trigger" href="#wt1con">CONCLUSIONS</a>
+            </li>
+          </div>
+          <li class="nav-item" >
+            <a class="nav-link js-scroll-trigger dropdown-toggle dropdown-label3" data-toggle="dropdown" href="#wt3employer" onclick="accWT3()">Work Term 3</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#skills">Goals</a>
+            <div class="dropdown-container" id="WrkTerm3" >
+                <li>
+                    <a class="nav-link js-scroll-trigger" href="#wt3employer">EMPLOYER</a>
+                </li>
+                <li>
+                    <a class="nav-link js-scroll-trigger" href="#wt3jobs">JOB DESCRIPTION</a>
+                </li>
+                <li>
+                    <a class="nav-link js-scroll-trigger" href="#wt3goals">GOALS</a>
+                </li>
+                <li>
+                    <a class="nav-link js-scroll-trigger" href="#wt3con">CONCLUSIONS</a>
+                </li>
+            </div>
+          <li class="nav-item" >
+            <a class="nav-link js-scroll-trigger dropdown-toggle dropdown-label5" data-toggle="dropdown" href="#wt5employer" onclick="accWT5()">Work Term 4/5</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#interests">Conclusions</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#awards">Acknowledgments</a>
-          </li>
+              <div class="dropdown-container" id="WrkTerm5" >
+                <li>
+                  <a class="nav-link js-scroll-trigger" href="#wt5con">CONCLUSIONS</a>
+              </li>
+            </div>
         </ul>
       </div>
     </nav>
@@ -82,9 +102,9 @@
           </ul>
         </div>
       </section>
-
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="wt3employer">
         <div class="my-auto">
+          <h1 class="mb-5 text-primary">Work Term 3</h2>
           <h2 class="mb-5">Employer</h2>
 
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
@@ -92,7 +112,7 @@
               <h3 class="mb-0">Technical Support Analyst Co-op Student</h3>
               <div class="subheading mb-3">The Co-operators</div>
               <p>  <img src="img/cooperatorsbuilding.jpg" alt="" style="height:400px;margin: 20px 40px;" align="right"> <br><br>
-              The Co-operators are a Canadian insurance and financial services co-operative. They work in three areas: Property and Casualty insurance, Life insurance and institutional investments. They support about 5000 employee and work hard at creating a sustainable society.<br><br>At the Co-operators, I worked on the Technical Platform Support (TPS) Team, providing second level support to their employees. This team was the base of tech support at the Co-operators. The team interacted heavily with Co-operator’s employees and the various other teams to provide technical support. The team was compromised of roughly 25+ individuals, who worked across Canada in Regina, Moncton, Mississauga, Burlington, and Guelph (I worked in the Guelph office).<br><br>TPS was a great team to work with. The team was very friendly and made me feel like I was a part of their team from day one. They did a tremendous job guiding me through my role and were very approachable for question asking 
+              The Co-operators are a Canadian insurance and financial services co-operative. They work in three areas: Property and Casualty insurance, Life insurance and institutional investments. They support about 5000 employee and work hard at creating a sustainable society.<br><br>At the Co-operators, I worked on the Technical Platform Support (TPS) Team, providing second level support to their employees. This team was the base of tech support at the Co-operators. The team interacted heavily with Co-operator’s employees and the various other teams to provide technical support. The team was compromised of roughly 25+ individuals, who worked across Canada in Regina, Moncton, Mississauga, Burlington, and Guelph (I worked in the Guelph office).<br><br>TPS was a great team to work with. The team was very friendly and made me feel like I was a part of their team from day one. They did a tremendous job guiding me through my role and were very approachable for question asking
               </div>
           </div>
 
@@ -100,7 +120,7 @@
 
       </section>
 
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="wt3jobs">
         <div class="my-auto">
           <h2 class="mb-5">Job Description</h2>
 
@@ -109,7 +129,7 @@
         </div>
       </section>
 
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="wt3goals">
         <div class="my-auto">
           <h2 class="mb-5">Goals</h2>
           <p>
@@ -120,7 +140,7 @@
         </div>
       </section>
 
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="wt3con">
         <div class="my-auto">
           <h2 class="mb-5">Conclusions</h2>
           <p>I am very grateful that I had the opportunity to do my third co-op term at the Co-operators. Working in TPS, I learned a lot about interacting with end users and was able to strengthen so many of my soft skills. Although there were not many opportunities to apply my coding skill or many of the software methodologies learned in school, there were still many things I experienced working here that I would never have had the chance to otherwise. For future work terms, I will look to find a more technical job that will allow me to use the skills I am learning in school in tandem with all the soft skills I developed on this work term. </p>
@@ -146,7 +166,76 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/resume.min.js"></script>
+    <script>
+      function accWT3() {
+        var dropdown = document.getElementById("WrkTerm3");
+        var nav = document.getElementById("page-top");
+        var WRK1 = document.getElementById("WrkTerm1");
+        var WRK5 = document.getElementById("WrkTerm5");
+        if(dropdown.style.display == 'none'){
+          dropdown.style.display = 'inline';
+          nav.style.setProperty('--main-nav-bg', "#ff80ff");
+          nav.style.setProperty('--hover', "#9ea6ae");
+          nav.style.setProperty('--label3', "#9ea6ae");
+          nav.style.setProperty('--label2', "#ff80ff");
+          nav.style.setProperty('--label1', "#ff80ff");
+        }
+        else{
+          dropdown.style.display = 'none';
+          nav.style.setProperty('--label3', "#ffccff");
+        }
 
+          WRK1.style.display = 'none';
+          WRK5.style.display = 'none';
+
+      }
+
+      function accWT1() {
+        var dropdown = document.getElementById("WrkTerm1");
+        var nav = document.getElementById("page-top");
+        var WRK3 = document.getElementById("WrkTerm3");
+        var WRK5 = document.getElementById("WrkTerm5");
+        if(dropdown.style.display == 'none'){
+          dropdown.style.display = 'inline';
+          nav.style.setProperty('--main-nav-bg', "#F79D1E");
+          nav.style.setProperty('--hover', "#9ea6ae");
+          nav.style.setProperty('--label1', "#9ea6ae");
+          nav.style.setProperty('--label3', "#F79D1E");
+          nav.style.setProperty('--label2', "#F79D1E");
+        }
+        else{
+          dropdown.style.display = 'none';
+          nav.style.setProperty('--label1', "#0ee6be");
+        }
+
+          WRK3.style.display = 'none';
+          WRK5.style.display = 'none';
+
+      }
+
+      function accWT5() {
+        var dropdown = document.getElementById("WrkTerm5");
+        var nav = document.getElementById("page-top");
+        var WRK3 = document.getElementById("WrkTerm3");
+        var WRK1 = document.getElementById("WrkTerm1");
+        if(dropdown.style.display == 'none'){
+          dropdown.style.display = 'inline';
+          nav.style.setProperty('--main-nav-bg', "#0ee6be");
+          nav.style.setProperty('--hover', "#9ea6ae");
+          nav.style.setProperty('--label2', "#9ea6ae");
+          nav.style.setProperty('--label3', "#0ee6be");
+          nav.style.setProperty('--label1', "#0ee6be");
+        }
+        else{
+          dropdown.style.display = 'none';
+          nav.style.setProperty('--label2', "#0ee6be");
+        }
+
+          WRK1.style.display = 'none';
+          WRK3.style.display = 'none';
+
+      }
+    </script>
   </body>
 
 </html>
