@@ -157,4 +157,4 @@ section.resume-section {
 a {
   color: #bd386f; }
   a:hover, a:active, a:focus{
-    background-color: var(--hover); }
+    background-color: rgba(255, 255, 255, 0.7); }
